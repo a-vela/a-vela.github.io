@@ -30,7 +30,7 @@
       margin-top: 0;
     }
 
-    nav {
+    /* nav {
       background: #f4f4f4;
       padding: 1em;
       text-align: center;
@@ -44,7 +44,33 @@
 
     nav a:hover {
       text-decoration: underline;
-    }
+    } */
+
+    nav {
+  background: #f4f4f4;
+  padding: 1em;
+  text-align: left; /* better for vertical layout */
+  max-width: 300px; /* constrain nav width */
+  margin: 0 auto; /* center nav block */
+}
+
+nav a {
+  display: block; /* stack vertically */
+  margin: 0.3em 0; /* less margin top and bottom */
+  padding: 0.3em 0;
+  font-size: 0.9em; /* smaller font size */
+  color: #333;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+
+nav a:hover {
+  border-left: 3px solid #007BFF; /* blue highlight on hover */
+  background: #e1eaff; /* subtle background highlight */
+  text-decoration: none; /* keep consistent */
+}
+
   </style>
 </head>
 <body>
